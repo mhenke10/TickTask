@@ -1,0 +1,771 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C45262141C5ABE2B00B21DE2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45262131C5ABE2B00B21DE2 /* AppDelegate.swift */; };
+		C45262161C5ABE2B00B21DE2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45262151C5ABE2B00B21DE2 /* ViewController.swift */; };
+		C45262191C5ABE2B00B21DE2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C45262171C5ABE2B00B21DE2 /* Main.storyboard */; };
+		C452621B1C5ABE2B00B21DE2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C452621A1C5ABE2B00B21DE2 /* Assets.xcassets */; };
+		C452621E1C5ABE2B00B21DE2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C452621C1C5ABE2B00B21DE2 /* LaunchScreen.storyboard */; };
+		C45262291C5ABE2C00B21DE2 /* TickTaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45262281C5ABE2C00B21DE2 /* TickTaskTests.swift */; };
+		C45262341C5ABE2C00B21DE2 /* TickTaskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45262331C5ABE2C00B21DE2 /* TickTaskUITests.swift */; };
+		C45262391C5ABE2C00B21DE2 /* TickTask WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = C45262381C5ABE2C00B21DE2 /* TickTask WatchKit App.app */; };
+		C452623F1C5ABE2C00B21DE2 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C452623D1C5ABE2C00B21DE2 /* Interface.storyboard */; };
+		C45262411C5ABE2C00B21DE2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C45262401C5ABE2C00B21DE2 /* Assets.xcassets */; };
+		C45262481C5ABE2C00B21DE2 /* TickTask WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = C45262471C5ABE2C00B21DE2 /* TickTask WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		C452624F1C5ABE2C00B21DE2 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C452624E1C5ABE2C00B21DE2 /* InterfaceController.swift */; };
+		C45262511C5ABE2C00B21DE2 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45262501C5ABE2C00B21DE2 /* ExtensionDelegate.swift */; };
+		C45262531C5ABE2C00B21DE2 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45262521C5ABE2C00B21DE2 /* NotificationController.swift */; };
+		C45262551C5ABE2C00B21DE2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C45262541C5ABE2C00B21DE2 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C45262251C5ABE2C00B21DE2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C45262081C5ABE2B00B21DE2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C452620F1C5ABE2B00B21DE2;
+			remoteInfo = TickTask;
+		};
+		C45262301C5ABE2C00B21DE2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C45262081C5ABE2B00B21DE2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C452620F1C5ABE2B00B21DE2;
+			remoteInfo = TickTask;
+		};
+		C452623A1C5ABE2C00B21DE2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C45262081C5ABE2B00B21DE2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C45262371C5ABE2C00B21DE2;
+			remoteInfo = "TickTask WatchKit App";
+		};
+		C45262491C5ABE2C00B21DE2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C45262081C5ABE2B00B21DE2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C45262461C5ABE2C00B21DE2;
+			remoteInfo = "TickTask WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C452625C1C5ABE2C00B21DE2 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				C45262481C5ABE2C00B21DE2 /* TickTask WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C45262601C5ABE2C00B21DE2 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				C45262391C5ABE2C00B21DE2 /* TickTask WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		C45262101C5ABE2B00B21DE2 /* TickTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TickTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C45262131C5ABE2B00B21DE2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C45262151C5ABE2B00B21DE2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C45262181C5ABE2B00B21DE2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C452621A1C5ABE2B00B21DE2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C452621D1C5ABE2B00B21DE2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C452621F1C5ABE2B00B21DE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C45262241C5ABE2C00B21DE2 /* TickTaskTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TickTaskTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C45262281C5ABE2C00B21DE2 /* TickTaskTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickTaskTests.swift; sourceTree = "<group>"; };
+		C452622A1C5ABE2C00B21DE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C452622F1C5ABE2C00B21DE2 /* TickTaskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TickTaskUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C45262331C5ABE2C00B21DE2 /* TickTaskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickTaskUITests.swift; sourceTree = "<group>"; };
+		C45262351C5ABE2C00B21DE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C45262381C5ABE2C00B21DE2 /* TickTask WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TickTask WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C452623E1C5ABE2C00B21DE2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		C45262401C5ABE2C00B21DE2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C45262421C5ABE2C00B21DE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C45262471C5ABE2C00B21DE2 /* TickTask WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "TickTask WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C452624D1C5ABE2C00B21DE2 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		C452624E1C5ABE2C00B21DE2 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		C45262501C5ABE2C00B21DE2 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		C45262521C5ABE2C00B21DE2 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		C45262541C5ABE2C00B21DE2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C45262561C5ABE2C00B21DE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C452620D1C5ABE2B00B21DE2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C45262211C5ABE2C00B21DE2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C452622C1C5ABE2C00B21DE2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C45262441C5ABE2C00B21DE2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C45262071C5ABE2B00B21DE2 = {
+			isa = PBXGroup;
+			children = (
+				C45262121C5ABE2B00B21DE2 /* TickTask */,
+				C45262271C5ABE2C00B21DE2 /* TickTaskTests */,
+				C45262321C5ABE2C00B21DE2 /* TickTaskUITests */,
+				C452623C1C5ABE2C00B21DE2 /* TickTask WatchKit App */,
+				C452624B1C5ABE2C00B21DE2 /* TickTask WatchKit Extension */,
+				C45262111C5ABE2B00B21DE2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C45262111C5ABE2B00B21DE2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C45262101C5ABE2B00B21DE2 /* TickTask.app */,
+				C45262241C5ABE2C00B21DE2 /* TickTaskTests.xctest */,
+				C452622F1C5ABE2C00B21DE2 /* TickTaskUITests.xctest */,
+				C45262381C5ABE2C00B21DE2 /* TickTask WatchKit App.app */,
+				C45262471C5ABE2C00B21DE2 /* TickTask WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C45262121C5ABE2B00B21DE2 /* TickTask */ = {
+			isa = PBXGroup;
+			children = (
+				C45262131C5ABE2B00B21DE2 /* AppDelegate.swift */,
+				C45262151C5ABE2B00B21DE2 /* ViewController.swift */,
+				C45262171C5ABE2B00B21DE2 /* Main.storyboard */,
+				C452621A1C5ABE2B00B21DE2 /* Assets.xcassets */,
+				C452621C1C5ABE2B00B21DE2 /* LaunchScreen.storyboard */,
+				C452621F1C5ABE2B00B21DE2 /* Info.plist */,
+			);
+			path = TickTask;
+			sourceTree = "<group>";
+		};
+		C45262271C5ABE2C00B21DE2 /* TickTaskTests */ = {
+			isa = PBXGroup;
+			children = (
+				C45262281C5ABE2C00B21DE2 /* TickTaskTests.swift */,
+				C452622A1C5ABE2C00B21DE2 /* Info.plist */,
+			);
+			path = TickTaskTests;
+			sourceTree = "<group>";
+		};
+		C45262321C5ABE2C00B21DE2 /* TickTaskUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C45262331C5ABE2C00B21DE2 /* TickTaskUITests.swift */,
+				C45262351C5ABE2C00B21DE2 /* Info.plist */,
+			);
+			path = TickTaskUITests;
+			sourceTree = "<group>";
+		};
+		C452623C1C5ABE2C00B21DE2 /* TickTask WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				C452623D1C5ABE2C00B21DE2 /* Interface.storyboard */,
+				C45262401C5ABE2C00B21DE2 /* Assets.xcassets */,
+				C45262421C5ABE2C00B21DE2 /* Info.plist */,
+			);
+			path = "TickTask WatchKit App";
+			sourceTree = "<group>";
+		};
+		C452624B1C5ABE2C00B21DE2 /* TickTask WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				C452624E1C5ABE2C00B21DE2 /* InterfaceController.swift */,
+				C45262501C5ABE2C00B21DE2 /* ExtensionDelegate.swift */,
+				C45262521C5ABE2C00B21DE2 /* NotificationController.swift */,
+				C45262541C5ABE2C00B21DE2 /* Assets.xcassets */,
+				C45262561C5ABE2C00B21DE2 /* Info.plist */,
+				C452624C1C5ABE2C00B21DE2 /* Supporting Files */,
+			);
+			path = "TickTask WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		C452624C1C5ABE2C00B21DE2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C452624D1C5ABE2C00B21DE2 /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C452620F1C5ABE2B00B21DE2 /* TickTask */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C45262611C5ABE2C00B21DE2 /* Build configuration list for PBXNativeTarget "TickTask" */;
+			buildPhases = (
+				C452620C1C5ABE2B00B21DE2 /* Sources */,
+				C452620D1C5ABE2B00B21DE2 /* Frameworks */,
+				C452620E1C5ABE2B00B21DE2 /* Resources */,
+				C45262601C5ABE2C00B21DE2 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C452623B1C5ABE2C00B21DE2 /* PBXTargetDependency */,
+			);
+			name = TickTask;
+			productName = TickTask;
+			productReference = C45262101C5ABE2B00B21DE2 /* TickTask.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C45262231C5ABE2C00B21DE2 /* TickTaskTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C45262641C5ABE2C00B21DE2 /* Build configuration list for PBXNativeTarget "TickTaskTests" */;
+			buildPhases = (
+				C45262201C5ABE2C00B21DE2 /* Sources */,
+				C45262211C5ABE2C00B21DE2 /* Frameworks */,
+				C45262221C5ABE2C00B21DE2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C45262261C5ABE2C00B21DE2 /* PBXTargetDependency */,
+			);
+			name = TickTaskTests;
+			productName = TickTaskTests;
+			productReference = C45262241C5ABE2C00B21DE2 /* TickTaskTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C452622E1C5ABE2C00B21DE2 /* TickTaskUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C45262671C5ABE2C00B21DE2 /* Build configuration list for PBXNativeTarget "TickTaskUITests" */;
+			buildPhases = (
+				C452622B1C5ABE2C00B21DE2 /* Sources */,
+				C452622C1C5ABE2C00B21DE2 /* Frameworks */,
+				C452622D1C5ABE2C00B21DE2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C45262311C5ABE2C00B21DE2 /* PBXTargetDependency */,
+			);
+			name = TickTaskUITests;
+			productName = TickTaskUITests;
+			productReference = C452622F1C5ABE2C00B21DE2 /* TickTaskUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		C45262371C5ABE2C00B21DE2 /* TickTask WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C452625D1C5ABE2C00B21DE2 /* Build configuration list for PBXNativeTarget "TickTask WatchKit App" */;
+			buildPhases = (
+				C45262361C5ABE2C00B21DE2 /* Resources */,
+				C452625C1C5ABE2C00B21DE2 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C452624A1C5ABE2C00B21DE2 /* PBXTargetDependency */,
+			);
+			name = "TickTask WatchKit App";
+			productName = "TickTask WatchKit App";
+			productReference = C45262381C5ABE2C00B21DE2 /* TickTask WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		C45262461C5ABE2C00B21DE2 /* TickTask WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C45262591C5ABE2C00B21DE2 /* Build configuration list for PBXNativeTarget "TickTask WatchKit Extension" */;
+			buildPhases = (
+				C45262431C5ABE2C00B21DE2 /* Sources */,
+				C45262441C5ABE2C00B21DE2 /* Frameworks */,
+				C45262451C5ABE2C00B21DE2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TickTask WatchKit Extension";
+			productName = "TickTask WatchKit Extension";
+			productReference = C45262471C5ABE2C00B21DE2 /* TickTask WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C45262081C5ABE2B00B21DE2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = RJICompetition;
+				TargetAttributes = {
+					C452620F1C5ABE2B00B21DE2 = {
+						CreatedOnToolsVersion = 7.0.1;
+					};
+					C45262231C5ABE2C00B21DE2 = {
+						CreatedOnToolsVersion = 7.0.1;
+						TestTargetID = C452620F1C5ABE2B00B21DE2;
+					};
+					C452622E1C5ABE2C00B21DE2 = {
+						CreatedOnToolsVersion = 7.0.1;
+						TestTargetID = C452620F1C5ABE2B00B21DE2;
+					};
+					C45262371C5ABE2C00B21DE2 = {
+						CreatedOnToolsVersion = 7.0.1;
+					};
+					C45262461C5ABE2C00B21DE2 = {
+						CreatedOnToolsVersion = 7.0.1;
+					};
+				};
+			};
+			buildConfigurationList = C452620B1C5ABE2B00B21DE2 /* Build configuration list for PBXProject "TickTask" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C45262071C5ABE2B00B21DE2;
+			productRefGroup = C45262111C5ABE2B00B21DE2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C452620F1C5ABE2B00B21DE2 /* TickTask */,
+				C45262231C5ABE2C00B21DE2 /* TickTaskTests */,
+				C452622E1C5ABE2C00B21DE2 /* TickTaskUITests */,
+				C45262371C5ABE2C00B21DE2 /* TickTask WatchKit App */,
+				C45262461C5ABE2C00B21DE2 /* TickTask WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C452620E1C5ABE2B00B21DE2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C452621E1C5ABE2B00B21DE2 /* LaunchScreen.storyboard in Resources */,
+				C452621B1C5ABE2B00B21DE2 /* Assets.xcassets in Resources */,
+				C45262191C5ABE2B00B21DE2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C45262221C5ABE2C00B21DE2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C452622D1C5ABE2C00B21DE2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C45262361C5ABE2C00B21DE2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C45262411C5ABE2C00B21DE2 /* Assets.xcassets in Resources */,
+				C452623F1C5ABE2C00B21DE2 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C45262451C5ABE2C00B21DE2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C45262551C5ABE2C00B21DE2 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C452620C1C5ABE2B00B21DE2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C45262161C5ABE2B00B21DE2 /* ViewController.swift in Sources */,
+				C45262141C5ABE2B00B21DE2 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C45262201C5ABE2C00B21DE2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C45262291C5ABE2C00B21DE2 /* TickTaskTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C452622B1C5ABE2C00B21DE2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C45262341C5ABE2C00B21DE2 /* TickTaskUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C45262431C5ABE2C00B21DE2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C45262531C5ABE2C00B21DE2 /* NotificationController.swift in Sources */,
+				C45262511C5ABE2C00B21DE2 /* ExtensionDelegate.swift in Sources */,
+				C452624F1C5ABE2C00B21DE2 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C45262261C5ABE2C00B21DE2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C452620F1C5ABE2B00B21DE2 /* TickTask */;
+			targetProxy = C45262251C5ABE2C00B21DE2 /* PBXContainerItemProxy */;
+		};
+		C45262311C5ABE2C00B21DE2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C452620F1C5ABE2B00B21DE2 /* TickTask */;
+			targetProxy = C45262301C5ABE2C00B21DE2 /* PBXContainerItemProxy */;
+		};
+		C452623B1C5ABE2C00B21DE2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C45262371C5ABE2C00B21DE2 /* TickTask WatchKit App */;
+			targetProxy = C452623A1C5ABE2C00B21DE2 /* PBXContainerItemProxy */;
+		};
+		C452624A1C5ABE2C00B21DE2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C45262461C5ABE2C00B21DE2 /* TickTask WatchKit Extension */;
+			targetProxy = C45262491C5ABE2C00B21DE2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C45262171C5ABE2B00B21DE2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C45262181C5ABE2B00B21DE2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C452621C1C5ABE2B00B21DE2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C452621D1C5ABE2B00B21DE2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		C452623D1C5ABE2C00B21DE2 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C452623E1C5ABE2C00B21DE2 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C45262571C5ABE2C00B21DE2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C45262581C5ABE2C00B21DE2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C452625A1C5ABE2C00B21DE2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "TickTask WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = RJI.TickTask.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		C452625B1C5ABE2C00B21DE2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "TickTask WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = RJI.TickTask.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		C452625E1C5ABE2C00B21DE2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = TickTask_WatchKit_Extension;
+				INFOPLIST_FILE = "TickTask WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = RJI.TickTask.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		C452625F1C5ABE2C00B21DE2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = TickTask_WatchKit_Extension;
+				INFOPLIST_FILE = "TickTask WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = RJI.TickTask.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		C45262621C5ABE2C00B21DE2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TickTask/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = RJI.TickTask;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C45262631C5ABE2C00B21DE2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TickTask/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = RJI.TickTask;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		C45262651C5ABE2C00B21DE2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TickTaskTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = RJI.TickTaskTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TickTask.app/TickTask";
+			};
+			name = Debug;
+		};
+		C45262661C5ABE2C00B21DE2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TickTaskTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = RJI.TickTaskTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TickTask.app/TickTask";
+			};
+			name = Release;
+		};
+		C45262681C5ABE2C00B21DE2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TickTaskUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = RJI.TickTaskUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = TickTask;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		C45262691C5ABE2C00B21DE2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TickTaskUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = RJI.TickTaskUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = TickTask;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C452620B1C5ABE2B00B21DE2 /* Build configuration list for PBXProject "TickTask" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C45262571C5ABE2C00B21DE2 /* Debug */,
+				C45262581C5ABE2C00B21DE2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C45262591C5ABE2C00B21DE2 /* Build configuration list for PBXNativeTarget "TickTask WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C452625A1C5ABE2C00B21DE2 /* Debug */,
+				C452625B1C5ABE2C00B21DE2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C452625D1C5ABE2C00B21DE2 /* Build configuration list for PBXNativeTarget "TickTask WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C452625E1C5ABE2C00B21DE2 /* Debug */,
+				C452625F1C5ABE2C00B21DE2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C45262611C5ABE2C00B21DE2 /* Build configuration list for PBXNativeTarget "TickTask" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C45262621C5ABE2C00B21DE2 /* Debug */,
+				C45262631C5ABE2C00B21DE2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C45262641C5ABE2C00B21DE2 /* Build configuration list for PBXNativeTarget "TickTaskTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C45262651C5ABE2C00B21DE2 /* Debug */,
+				C45262661C5ABE2C00B21DE2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C45262671C5ABE2C00B21DE2 /* Build configuration list for PBXNativeTarget "TickTaskUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C45262681C5ABE2C00B21DE2 /* Debug */,
+				C45262691C5ABE2C00B21DE2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C45262081C5ABE2B00B21DE2 /* Project object */;
+}
