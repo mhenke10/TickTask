@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		86FF024C1C5D43E700B565FF /* ScrollTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86FF024B1C5D43E700B565FF /* ScrollTest.swift */; };
 		C45262141C5ABE2B00B21DE2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45262131C5ABE2B00B21DE2 /* AppDelegate.swift */; };
 		C45262161C5ABE2B00B21DE2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45262151C5ABE2B00B21DE2 /* ViewController.swift */; };
 		C45262191C5ABE2B00B21DE2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C45262171C5ABE2B00B21DE2 /* Main.storyboard */; };
@@ -81,6 +82,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		86FF024B1C5D43E700B565FF /* ScrollTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollTest.swift; sourceTree = "<group>"; };
 		C45262101C5ABE2B00B21DE2 /* TickTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TickTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C45262131C5ABE2B00B21DE2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C45262151C5ABE2B00B21DE2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -172,6 +174,7 @@
 				C452621A1C5ABE2B00B21DE2 /* Assets.xcassets */,
 				C452621C1C5ABE2B00B21DE2 /* LaunchScreen.storyboard */,
 				C452621F1C5ABE2B00B21DE2 /* Info.plist */,
+				86FF024B1C5D43E700B565FF /* ScrollTest.swift */,
 			);
 			path = TickTask;
 			sourceTree = "<group>";
@@ -416,6 +419,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86FF024C1C5D43E700B565FF /* ScrollTest.swift in Sources */,
 				C45262161C5ABE2B00B21DE2 /* ViewController.swift in Sources */,
 				C45262141C5ABE2B00B21DE2 /* AppDelegate.swift in Sources */,
 			);
@@ -732,6 +736,7 @@
 				C452625B1C5ABE2C00B21DE2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C452625D1C5ABE2C00B21DE2 /* Build configuration list for PBXNativeTarget "TickTask WatchKit App" */ = {
 			isa = XCConfigurationList;
@@ -740,6 +745,7 @@
 				C452625F1C5ABE2C00B21DE2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C45262611C5ABE2C00B21DE2 /* Build configuration list for PBXNativeTarget "TickTask" */ = {
 			isa = XCConfigurationList;
@@ -748,6 +754,7 @@
 				C45262631C5ABE2C00B21DE2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C45262641C5ABE2C00B21DE2 /* Build configuration list for PBXNativeTarget "TickTaskTests" */ = {
 			isa = XCConfigurationList;
@@ -756,6 +763,7 @@
 				C45262661C5ABE2C00B21DE2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C45262671C5ABE2C00B21DE2 /* Build configuration list for PBXNativeTarget "TickTaskUITests" */ = {
 			isa = XCConfigurationList;
@@ -764,6 +772,7 @@
 				C45262691C5ABE2C00B21DE2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
