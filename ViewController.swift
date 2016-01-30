@@ -1,5 +1,5 @@
 //
-//  TaskListViewController.swift
+//  ViewController.swift
 //  TickTask
 //
 //  Created by Michael Henke on 1/30/16.
@@ -8,12 +8,11 @@
 
 import UIKit
 
-class TaskListViewController: UIViewController {
+class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.automaticallyAdjustsScrollViewInsets = false
-        self.title = "Task List"
+
         // Do any additional setup after loading the view.
     }
 
