@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		86FF024C1C5D43E700B565FF /* ScrollTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86FF024B1C5D43E700B565FF /* ScrollTest.swift */; };
 		86FF024E1C5D4E3A00B565FF /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86FF024D1C5D4E3A00B565FF /* Task.swift */; };
+		86FF02501C5D5F2B00B565FF /* TaskManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86FF024F1C5D5F2B00B565FF /* TaskManager.swift */; };
 		C45262141C5ABE2B00B21DE2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45262131C5ABE2B00B21DE2 /* AppDelegate.swift */; };
 		C45262191C5ABE2B00B21DE2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C45262171C5ABE2B00B21DE2 /* Main.storyboard */; };
 		C452621B1C5ABE2B00B21DE2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C452621A1C5ABE2B00B21DE2 /* Assets.xcassets */; };
@@ -85,6 +86,7 @@
 /* Begin PBXFileReference section */
 		86FF024B1C5D43E700B565FF /* ScrollTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollTest.swift; sourceTree = "<group>"; };
 		86FF024D1C5D4E3A00B565FF /* Task.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		86FF024F1C5D5F2B00B565FF /* TaskManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskManager.swift; sourceTree = "<group>"; };
 		C45262101C5ABE2B00B21DE2 /* TickTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TickTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C45262131C5ABE2B00B21DE2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C45262181C5ABE2B00B21DE2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -178,6 +180,7 @@
 				C452621F1C5ABE2B00B21DE2 /* Info.plist */,
 				86FF024B1C5D43E700B565FF /* ScrollTest.swift */,
 				86FF024D1C5D4E3A00B565FF /* Task.swift */,
+				86FF024F1C5D5F2B00B565FF /* TaskManager.swift */,
 			);
 			path = TickTask;
 			sourceTree = "<group>";
@@ -424,6 +427,7 @@
 			files = (
 				86FF024E1C5D4E3A00B565FF /* Task.swift in Sources */,
 				C46841FD1C5D5A2900E381FD /* TaskListViewController.swift in Sources */,
+				86FF02501C5D5F2B00B565FF /* TaskManager.swift in Sources */,
 				86FF024C1C5D43E700B565FF /* ScrollTest.swift in Sources */,
 				C45262141C5ABE2B00B21DE2 /* AppDelegate.swift in Sources */,
 			);
