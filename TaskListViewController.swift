@@ -23,7 +23,11 @@ class TaskListViewController: UIViewController {
     }
 
     
+    @IBAction func cancelToTaskListViewController(segue:UIStoryboardSegue) {
+    }
     
+    @IBAction func saveTask(segue:UIStoryboardSegue) {
+    }
     
 
     /*
