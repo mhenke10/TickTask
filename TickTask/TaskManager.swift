@@ -10,9 +10,9 @@ import Foundation
 
 class TaskManager : NSObject {
     
-    var tasks = [Task]()
+    static var tasks = [Task]()
     
-    func createNewTask(taskName:String,taskDescription:String,dueDate:NSDate){
+    static func createNewTask(taskName:String,taskDescription:String,dueDate:NSDate){
         let newTask = Task(taskName: taskName,taskDescription: taskDescription, dueDate: dueDate)
         tasks.append(newTask)
     }
