@@ -14,7 +14,7 @@ class CreateTaskTableViewController: UITableViewController {
     let currentDate = NSDate()
     var datePickerHidden = false
     @IBOutlet weak var taskNameField: UITextField!
-    @IBOutlet weak var taskDescriptionField: UITextField!
+    @IBOutlet weak var taskDescriptionField: UITextView!
     @IBOutlet weak var detailLabel: UILabel!
     @IBOutlet weak var datePicker: UIDatePicker!
 
@@ -34,11 +34,13 @@ class CreateTaskTableViewController: UITableViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    //Formatting and changing datePicker upon movement
     func datePickerChanged () {
         detailLabel.text = NSDateFormatter.localizedStringFromDate(datePicker.date, dateStyle: NSDateFormatterStyle.ShortStyle, timeStyle: NSDateFormatterStyle.ShortStyle)
     }
 
     
+    //Setting location for datePicker
     override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
         if datePickerHidden && indexPath.section == 2 && indexPath.row == 1 {
             return 0
@@ -48,6 +50,7 @@ class CreateTaskTableViewController: UITableViewController {
         }
     }
     
+    //First
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         if indexPath.section == 0 && indexPath.row == 0{
             taskNameField.becomeFirstResponder()
@@ -55,6 +58,9 @@ class CreateTaskTableViewController: UITableViewController {
         toggleDatepicker()
     }
     
+    
+ // ToggleDatePicker reveals datepicker
+
     func toggleDatepicker() {
         
         datePickerHidden = !datePickerHidden
@@ -63,15 +69,31 @@ class CreateTaskTableViewController: UITableViewController {
         tableView.endUpdates()
         
     }
-    
+   
+    //Action on tap, datePickerChanged
     @IBAction func datePickerValue(sender: UIDatePicker) {
         datePickerChanged()
     }
+    
+    //Saving task based on segue and task identifer
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "SaveTaskName"{
-            task = TaskManager.createNewTask(taskName: taskNameField.text!, taskDescription: taskDescriptionField.text!, dueDate: currentDate)
-            
+            TaskManager.createNewTask(taskNameField.text!, taskDescription: taskDescriptionField.text!, dueDate: currentDate)
         }
+    }
+    
+    override func shouldPerformSegueWithIdentifier(identifier: String, sender: AnyObject?) -> Bool {
+        if identifier == "SaveTaskName" {
+            if(taskNameField.text?.isEmpty == true){
+                let alert = UIAlertView()
+                alert.title = "No Task Name Added"
+                alert.addButtonWithTitle("Ok")
+                alert.show()
+                
+                return false
+            }
+        }
+        return true
     }
 
 }

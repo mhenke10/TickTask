@@ -12,8 +12,11 @@ class TaskManager : NSObject {
     
     static var tasks = [Task]()
     
-    static func createNewTask(taskName:String,taskDescription:String,dueDate:NSDate){
+    static func createNewTask(taskName : String, taskDescription : String, dueDate : NSDate){
         let newTask = Task(taskName: taskName,taskDescription: taskDescription, dueDate: dueDate)
         tasks.append(newTask)
+        print(newTask.taskName)
     }
+    
+    
 }
