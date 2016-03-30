@@ -10,6 +10,7 @@ import UIKit
 
 class TaskCell: UITableViewCell {
     
+    
     @IBOutlet weak var taskLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!
     
