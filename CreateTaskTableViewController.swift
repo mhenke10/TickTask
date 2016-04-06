@@ -80,6 +80,10 @@ class CreateTaskTableViewController: UITableViewController {
         if segue.identifier == "SaveTaskName"{
             TaskManager.createNewTask(taskNameField.text!, taskDescription: taskDescriptionField.text!, dueDate: currentDate)
         }
+        if segue.identifier == "viewTaskFromTasks"{
+            let destination = segue.destinationViewController as! TaskViewController
+            destination.task = Task(taskName: "Task Name",taskDescription: "Desc",dueDate: NSDate())
+        }
     }
     
     override func shouldPerformSegueWithIdentifier(identifier: String, sender: AnyObject?) -> Bool {

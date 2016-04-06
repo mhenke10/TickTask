@@ -70,7 +70,12 @@ class TaskListViewController: UITableViewController//, UITableViewDataSource, UI
         }
     }
     
-
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "viewTaskFromGroup"{
+            let destination = segue.destinationViewController as! TaskViewController
+            destination.task = Task(taskName: "Task Name",taskDescription: "Desc",dueDate: NSDate())
+        }
+    }
     /*
     // MARK: - Navigation
 

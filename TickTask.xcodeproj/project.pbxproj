@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		86CD92961CAC45F800930E7C /* GroupTasksTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86CD92951CAC45F800930E7C /* GroupTasksTableViewController.swift */; };
+		86D650631CAC711700E043E2 /* TaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D650621CAC711700E043E2 /* TaskViewController.swift */; };
 		86FF024E1C5D4E3A00B565FF /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86FF024D1C5D4E3A00B565FF /* Task.swift */; };
 		86FF02501C5D5F2B00B565FF /* TaskManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86FF024F1C5D5F2B00B565FF /* TaskManager.swift */; };
 		C45262141C5ABE2B00B21DE2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45262131C5ABE2B00B21DE2 /* AppDelegate.swift */; };
@@ -87,6 +88,7 @@
 
 /* Begin PBXFileReference section */
 		86CD92951CAC45F800930E7C /* GroupTasksTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupTasksTableViewController.swift; sourceTree = "<group>"; };
+		86D650621CAC711700E043E2 /* TaskViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskViewController.swift; sourceTree = "<group>"; };
 		86FF024D1C5D4E3A00B565FF /* Task.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 		86FF024F1C5D5F2B00B565FF /* TaskManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskManager.swift; sourceTree = "<group>"; };
 		C45262101C5ABE2B00B21DE2 /* TickTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TickTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -187,6 +189,7 @@
 				86FF024D1C5D4E3A00B565FF /* Task.swift */,
 				86FF024F1C5D5F2B00B565FF /* TaskManager.swift */,
 				86CD92951CAC45F800930E7C /* GroupTasksTableViewController.swift */,
+				86D650621CAC711700E043E2 /* TaskViewController.swift */,
 			);
 			path = TickTask;
 			sourceTree = "<group>";
@@ -436,6 +439,7 @@
 				86CD92961CAC45F800930E7C /* GroupTasksTableViewController.swift in Sources */,
 				C46841FD1C5D5A2900E381FD /* TaskListViewController.swift in Sources */,
 				86FF02501C5D5F2B00B565FF /* TaskManager.swift in Sources */,
+				86D650631CAC711700E043E2 /* TaskViewController.swift in Sources */,
 				C4F619031C60069300F14537 /* CreateTaskTableViewController.swift in Sources */,
 				C45262141C5ABE2B00B21DE2 /* AppDelegate.swift in Sources */,
 			);

@@ -16,6 +16,7 @@ class TaskManager : NSObject {
         let newTask = Task(taskName: taskName,taskDescription: taskDescription, dueDate: dueDate)
         tasks.append(newTask)
         print(newTask.taskName)
+        print(tasks)
     }
     
     
