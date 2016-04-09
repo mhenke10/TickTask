@@ -10,7 +10,7 @@ import UIKit
 
 class CreateTaskTableViewController: UITableViewController {
 
-    var task: Task?
+    var task: Int?
     let currentDate = NSDate()
     var datePickerHidden = false
     @IBOutlet weak var taskNameField: UITextField!
@@ -82,7 +82,9 @@ class CreateTaskTableViewController: UITableViewController {
         }
         if segue.identifier == "viewTaskFromTasks"{
             let destination = segue.destinationViewController as! TaskViewController
-            destination.task = Task(taskName: "Task Name",taskDescription: "Desc",dueDate: NSDate())
+            if let indexPath = tableView.indexPathForSelectedRow {
+                destination.task = TaskManager.tasks[indexPath.row]
+            }
         }
     }
     

@@ -10,8 +10,12 @@ import UIKit
 
 class GroupTasksTableViewController: UITableViewController {
 
+    var task: Task?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationController?.popViewControllerAnimated(false)
+        self.dismissViewControllerAnimated(false, completion: nil)
         self.automaticallyAdjustsScrollViewInsets = true
         self.title = "Group Task List"
         //setting up editing ability
@@ -70,7 +74,16 @@ class GroupTasksTableViewController: UITableViewController {
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "viewTaskFromGroup"{
             let destination = segue.destinationViewController as! TaskViewController
-            destination.task = Task(taskName: "Task Name",taskDescription: "Desc",dueDate: NSDate())
+            if let indexPath = tableView.indexPathForSelectedRow {
+                destination.task = TaskManager.tasks[indexPath.row]
+            }
         }
     }
+    
+  /*  func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        //TODO:
+        
+    }
+*/
+    
 }

@@ -11,6 +11,7 @@ import UIKit
 
 class TaskListViewController: UITableViewController//, UITableViewDataSource, UITableViewDelegate {
 {
+    var task : Task?
     
     //view did load
     override func viewDidLoad() {
@@ -20,6 +21,10 @@ class TaskListViewController: UITableViewController//, UITableViewDataSource, UI
         //setting up editing ability
         navigationItem.leftBarButtonItem = editButtonItem()
             // Do any additional setup after loading the view.
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        
     }
 
 
@@ -58,6 +63,7 @@ class TaskListViewController: UITableViewController//, UITableViewDataSource, UI
         
         let indexPath = NSIndexPath(forRow: TaskManager.tasks.count-1, inSection: 0)
         tableView.insertRowsAtIndexPaths([indexPath], withRowAnimation: .Automatic)
+        
         tableView.reloadData()
         
     }
@@ -71,11 +77,19 @@ class TaskListViewController: UITableViewController//, UITableViewDataSource, UI
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if segue.identifier == "viewTaskFromGroup"{
+        if segue.identifier == "viewTaskFromTasks"{
             let destination = segue.destinationViewController as! TaskViewController
-            destination.task = Task(taskName: "Task Name",taskDescription: "Desc",dueDate: NSDate())
+            if let indexPath = tableView.indexPathForSelectedRow {
+                destination.task = TaskManager.tasks[indexPath.row]
+            }
         }
     }
+    
+    /*
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        task = indexPath.row
+    }
+*/
     /*
     // MARK: - Navigation
 

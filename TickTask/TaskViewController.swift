@@ -11,7 +11,10 @@ import UIKit
 class TaskViewController: UIViewController {
 
     @IBOutlet weak var taskNameLabel: UILabel!
-    var task : Task!
+    
+    @IBOutlet var taskDescLabel: UILabel!
+    
+    var task : Task?
 //    @IBOutlet weak var descriptionLabel: UILabel!
 //    @IBOutlet weak var dueDateLabel: UILabel!
 //    var task : Task
@@ -19,7 +22,8 @@ class TaskViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        taskNameLabel.text = ""
+        taskNameLabel.text = task?.taskName
+        taskDescLabel.text = task?.taskDescription
 //        descriptionLabel.text = "Description of the task"
 //        dueDateLabel.text = "May 19 2016"
         // Do any additional setup after loading the view.
