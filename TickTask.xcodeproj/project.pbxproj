@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8695FB991CB9937A00222441 /* GroupTaskCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8695FB981CB9937A00222441 /* GroupTaskCell.swift */; };
 		86CD92961CAC45F800930E7C /* GroupTasksTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86CD92951CAC45F800930E7C /* GroupTasksTableViewController.swift */; };
 		86D650631CAC711700E043E2 /* TaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D650621CAC711700E043E2 /* TaskViewController.swift */; };
 		86FF024E1C5D4E3A00B565FF /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86FF024D1C5D4E3A00B565FF /* Task.swift */; };
@@ -87,6 +88,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		8695FB981CB9937A00222441 /* GroupTaskCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupTaskCell.swift; sourceTree = "<group>"; };
 		86CD92951CAC45F800930E7C /* GroupTasksTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupTasksTableViewController.swift; sourceTree = "<group>"; };
 		86D650621CAC711700E043E2 /* TaskViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskViewController.swift; sourceTree = "<group>"; };
 		86FF024D1C5D4E3A00B565FF /* Task.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
@@ -190,6 +192,7 @@
 				86FF024F1C5D5F2B00B565FF /* TaskManager.swift */,
 				86CD92951CAC45F800930E7C /* GroupTasksTableViewController.swift */,
 				86D650621CAC711700E043E2 /* TaskViewController.swift */,
+				8695FB981CB9937A00222441 /* GroupTaskCell.swift */,
 			);
 			path = TickTask;
 			sourceTree = "<group>";
@@ -437,6 +440,7 @@
 				86FF024E1C5D4E3A00B565FF /* Task.swift in Sources */,
 				C46816C11C790A4C00FE37F0 /* TaskCell.swift in Sources */,
 				86CD92961CAC45F800930E7C /* GroupTasksTableViewController.swift in Sources */,
+				8695FB991CB9937A00222441 /* GroupTaskCell.swift in Sources */,
 				C46841FD1C5D5A2900E381FD /* TaskListViewController.swift in Sources */,
 				86FF02501C5D5F2B00B565FF /* TaskManager.swift in Sources */,
 				86D650631CAC711700E043E2 /* TaskViewController.swift in Sources */,

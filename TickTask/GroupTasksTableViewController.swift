@@ -39,7 +39,7 @@ class GroupTasksTableViewController: UITableViewController {
     //Fill cells in tableView to be of type task.
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath)
         -> UITableViewCell {
-            let cell = tableView.dequeueReusableCellWithIdentifier("GroupTaskCell", forIndexPath: indexPath) as! TaskCell
+            let cell = tableView.dequeueReusableCellWithIdentifier("GroupTaskCell", forIndexPath: indexPath) as! GroupTaskCell
             
             let task = TaskManager.tasks[indexPath.row] as Task
             cell.task = task

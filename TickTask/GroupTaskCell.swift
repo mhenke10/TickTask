@@ -1,18 +1,17 @@
 //
-//  TaskCell.swift
+//  TableViewCell.swift
 //  TickTask
 //
-//  Created by Michael Henke on 2/20/16.
+//  Created by Oberd on 4/9/16.
 //  Copyright © 2016 RJICompetition. All rights reserved.
 //
 
 import UIKit
 
-class TaskCell: UITableViewCell {
-    
-    
-    @IBOutlet weak var taskLabel: UILabel!
+class GroupTaskCell: UITableViewCell {
+
     @IBOutlet weak var descriptionLabel: UILabel!
+    @IBOutlet weak var taskLabel: UILabel!
     
     var task: Task!{
         didSet {
@@ -20,5 +19,5 @@ class TaskCell: UITableViewCell {
             descriptionLabel.text = task.taskDescription
         }
     }
-    
+
 }

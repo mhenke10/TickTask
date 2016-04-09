@@ -243,7 +243,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="0.0" reuseIdentifier="GroupTasksCell" rowHeight="60" id="0db-TV-7cI" customClass="TaskCell" customModule="TickTask" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="0.0" reuseIdentifier="GroupTasksCell" rowHeight="60" id="0db-TV-7cI" customClass="GroupTaskCell" customModule="TickTask" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="92" width="600" height="60"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="0db-TV-7cI" id="hDM-He-5Fs">
@@ -271,6 +271,8 @@
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="descriptionLabel" destination="hL1-5m-cEn" id="3af-Bw-LWs"/>
+                                    <outlet property="taskLabel" destination="2ZT-7S-aWh" id="ung-nG-HNa"/>
                                     <segue destination="oan-Du-yVB" kind="show" identifier="viewTaskFromGroup" id="pp7-p6-PZ7"/>
                                 </connections>
                             </tableViewCell>
@@ -364,7 +366,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="VHh-Bn-2tM"/>
+        <segue reference="pp7-p6-PZ7"/>
         <segue reference="T5d-7G-MKN"/>
     </inferredMetricsTieBreakers>
 </document>
