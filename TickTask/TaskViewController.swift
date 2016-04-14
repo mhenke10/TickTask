@@ -9,10 +9,12 @@
 import UIKit
 
 class TaskViewController: UIViewController {
-
-    @IBOutlet weak var taskNameLabel: UILabel!
     
     @IBOutlet var taskDescLabel: UILabel!
+    
+    @IBOutlet weak var dueDateLabel: UILabel!
+    
+    @IBOutlet weak var groupLabel: UILabel!
     
     var task : Task?
 //    @IBOutlet weak var descriptionLabel: UILabel!
@@ -22,10 +24,13 @@ class TaskViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        taskNameLabel.text = task?.taskName
+        let dateFormatter = NSDateFormatter()
+        dateFormatter.dateFormat = "MM/dd/yyyy"
+        let date = dateFormatter.stringFromDate((task?.dateDue)!)
+        
+        self.title = task?.taskName
         taskDescLabel.text = task?.taskDescription
-//        descriptionLabel.text = "Description of the task"
-//        dueDateLabel.text = "May 19 2016"
+        dueDateLabel.text = date
         // Do any additional setup after loading the view.
     }
 

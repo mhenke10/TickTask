@@ -14,11 +14,13 @@ class Task : NSObject {
     var dateDue:NSDate
     var isCompleted:Bool
     var dateCompleted:NSDate?
+    var groupName:String
  
-    init(taskName:String,taskDescription:String,dueDate:NSDate) {
+    init(taskName:String,taskDescription:String,dueDate:NSDate,groupName:String) {
         self.taskName = taskName
         self.taskDescription = taskDescription
         self.dateDue = dueDate
+        self.groupName = groupName
         self.isCompleted = false
         self.dateCompleted = nil;
     }
@@ -59,6 +61,9 @@ class Task : NSObject {
     func completeTask(){
         self.isCompleted = true;
         self.dateCompleted = NSDate()
+    }
+    func getGroup()->String{
+        return self.groupName
     }
     
     

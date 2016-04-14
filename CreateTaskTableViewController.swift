@@ -11,7 +11,7 @@ import UIKit
 class CreateTaskTableViewController: UITableViewController {
 
     var task: Int?
-    let currentDate = NSDate()
+    var currentDate = NSDate()
     var datePickerHidden = false
     @IBOutlet weak var taskNameField: UITextField!
     @IBOutlet weak var taskDescriptionField: UITextView!
@@ -36,7 +36,9 @@ class CreateTaskTableViewController: UITableViewController {
     
     //Formatting and changing datePicker upon movement
     func datePickerChanged () {
+        datePicker.datePickerMode = UIDatePickerMode.Date
         detailLabel.text = NSDateFormatter.localizedStringFromDate(datePicker.date, dateStyle: NSDateFormatterStyle.ShortStyle, timeStyle: NSDateFormatterStyle.ShortStyle)
+        currentDate = datePicker.date
     }
 
     
