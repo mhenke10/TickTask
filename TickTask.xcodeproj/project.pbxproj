@@ -169,6 +169,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		86D6DB451CCD7198007AF04D /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				C4F619021C60069300F14537 /* CreateTaskTableViewController.swift */,
+				C46841FC1C5D5A2900E381FD /* TaskListViewController.swift */,
+				C4EFF4081CC8B34C001AE8A4 /* TaskLocationViewController.swift */,
+				86D650621CAC711700E043E2 /* TaskViewController.swift */,
+				86D6DB3B1CCD5E73007AF04D /* GroupsTableViewController.swift */,
+				86CD92951CAC45F800930E7C /* GroupTasksTableViewController.swift */,
+				86D6DB431CCD6E65007AF04D /* GroupViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		86D6DB461CCD71A5007AF04D /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				86D6DB3D1CCD60E4007AF04D /* App_Group.swift */,
+				86D6DB411CCD63AA007AF04D /* GroupCell.swift */,
+				8695FB981CB9937A00222441 /* GroupTaskCell.swift */,
+				86D6DB3F1CCD61D1007AF04D /* Groups.swift */,
+				86FF024D1C5D4E3A00B565FF /* Task.swift */,
+				C46816C01C790A4C00FE37F0 /* TaskCell.swift */,
+				86FF024F1C5D5F2B00B565FF /* TaskManager.swift */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
 		C45262071C5ABE2B00B21DE2 = {
 			isa = PBXGroup;
 			children = (
@@ -196,25 +224,13 @@
 		C45262121C5ABE2B00B21DE2 /* TickTask */ = {
 			isa = PBXGroup;
 			children = (
-				C4F619021C60069300F14537 /* CreateTaskTableViewController.swift */,
-				C46841FC1C5D5A2900E381FD /* TaskListViewController.swift */,
-				C46816C01C790A4C00FE37F0 /* TaskCell.swift */,
+				86D6DB461CCD71A5007AF04D /* Classes */,
+				86D6DB451CCD7198007AF04D /* ViewControllers */,
 				C45262131C5ABE2B00B21DE2 /* AppDelegate.swift */,
 				C45262171C5ABE2B00B21DE2 /* Main.storyboard */,
-				C4EFF4081CC8B34C001AE8A4 /* TaskLocationViewController.swift */,
 				C452621A1C5ABE2B00B21DE2 /* Assets.xcassets */,
 				C452621C1C5ABE2B00B21DE2 /* LaunchScreen.storyboard */,
 				C452621F1C5ABE2B00B21DE2 /* Info.plist */,
-				86FF024D1C5D4E3A00B565FF /* Task.swift */,
-				86FF024F1C5D5F2B00B565FF /* TaskManager.swift */,
-				86CD92951CAC45F800930E7C /* GroupTasksTableViewController.swift */,
-				86D650621CAC711700E043E2 /* TaskViewController.swift */,
-				8695FB981CB9937A00222441 /* GroupTaskCell.swift */,
-				86D6DB3B1CCD5E73007AF04D /* GroupsTableViewController.swift */,
-				86D6DB3D1CCD60E4007AF04D /* App_Group.swift */,
-				86D6DB3F1CCD61D1007AF04D /* Groups.swift */,
-				86D6DB411CCD63AA007AF04D /* GroupCell.swift */,
-				86D6DB431CCD6E65007AF04D /* GroupViewController.swift */,
 			);
 			path = TickTask;
 			sourceTree = "<group>";
