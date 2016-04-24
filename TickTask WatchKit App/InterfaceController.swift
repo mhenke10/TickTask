@@ -1,8 +1,8 @@
 //
 //  InterfaceController.swift
-//  TickTask WatchKit Extension
+//  TickTask
 //
-//  Created by Michael Henke on 1/28/16.
+//  Created by Oberd on 4/19/16.
 //  Copyright © 2016 RJICompetition. All rights reserved.
 //
 
@@ -14,7 +14,8 @@ class InterfaceController: WKInterfaceController {
 
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
-        
+        label.setText("Hello Watch App")
+
         // Configure interface objects here.
     }
 
