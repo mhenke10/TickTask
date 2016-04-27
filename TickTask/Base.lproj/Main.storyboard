@@ -3,6 +3,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
     </dependencies>
     <scenes>
         <!--Task List View Controller-->
@@ -625,7 +626,10 @@
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="Add Geotification" id="NZC-e8-cj3" userLabel="Add Location">
                         <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="kUi-QQ-wYz"/>
-                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="CcV-nx-LCd"/>
+                        <rightBarButtonItems>
+                            <barButtonItem systemItem="done" id="CcV-nx-LCd"/>
+                            <barButtonItem image="currLoc" id="bTT-5V-uyy"/>
+                        </rightBarButtonItems>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </tableViewController>
@@ -652,6 +656,9 @@
             <point key="canvasLocation" x="6612" y="1243"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="currLoc" width="15" height="15"/>
+    </resources>
     <inferredMetricsTieBreakers>
         <segue reference="VHh-Bn-2tM"/>
         <segue reference="ba8-E1-XUW"/>
