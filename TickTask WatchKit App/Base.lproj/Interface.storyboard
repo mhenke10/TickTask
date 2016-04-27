@@ -50,6 +50,13 @@
                         <label alignment="center" text="Desc" numberOfLines="0" id="VjW-hQ-Ce1"/>
                         <label alignment="center" text="Due Date" id="c5H-Uv-iXL"/>
                         <label alignment="center" text="Group" id="IXe-i4-3hD"/>
+                        <button width="1" alignment="left" title="Mission Complete" id="ESM-QI-8hS">
+                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="backgroundColor" red="0.1938098087" green="1" blue="0.0087257662989999995" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="completeTaskButton" destination="mEH-ta-TRS" id="FnZ-O9-TGW"/>
+                            </connections>
+                        </button>
                     </items>
                     <connections>
                         <outlet property="dateLabel" destination="c5H-Uv-iXL" id="kDJ-np-DVP"/>

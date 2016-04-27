@@ -80,7 +80,7 @@ class CreateTaskTableViewController: UITableViewController {
     //Saving task based on segue and task identifer
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "SaveTaskName"{
-            TaskManager.createNewTask(taskNameField.text!, taskDescription: taskDescriptionField.text!, dueDate: currentDate)
+            TaskManager.createNewTask(taskNameField.text!, taskDescription: taskDescriptionField.text!, dueDate: currentDate,groupName:"Group 1")
         }
         if segue.identifier == "viewTaskFromTasks"{
             let destination = segue.destinationViewController as! TaskViewController

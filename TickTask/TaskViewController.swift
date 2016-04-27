@@ -17,9 +17,6 @@ class TaskViewController: UIViewController {
     @IBOutlet weak var groupLabel: UILabel!
     
     var task : Task?
-//    @IBOutlet weak var descriptionLabel: UILabel!
-//    @IBOutlet weak var dueDateLabel: UILabel!
-//    var task : Task
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,6 +28,7 @@ class TaskViewController: UIViewController {
         self.title = task?.taskName
         taskDescLabel.text = task?.taskDescription
         dueDateLabel.text = date
+        groupLabel.text = task?.groupName
         // Do any additional setup after loading the view.
     }
 
@@ -39,4 +37,13 @@ class TaskViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func completeTask(sender: AnyObject) {
+        if(task!.isCompleted != true){
+            task!.completeTask()
+            let alert = UIAlertView()
+            alert.title = "Mission Completed"
+            alert.addButtonWithTitle("Ok")
+            alert.show()
+        }
+    }
 }
