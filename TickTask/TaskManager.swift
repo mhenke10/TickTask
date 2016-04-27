@@ -11,21 +11,22 @@ import Foundation
 class TaskManager : NSObject {
     
     static var tasks = [Task]()
+    static var groupsList : [String] = ["Group1","Group2","Group3"]
     
     override init(){
-        TaskManager.createNewTask("Task1", taskDescription: "Task1", dueDate: NSDate())
-        TaskManager.createNewTask("Task2", taskDescription: "Task2", dueDate: NSDate())
-        TaskManager.createNewTask("Task3", taskDescription: "Task3", dueDate: NSDate())
-        TaskManager.createNewTask("Task4", taskDescription: "Task4", dueDate: NSDate())
-        TaskManager.createNewTask("Task5", taskDescription: "Task5", dueDate: NSDate())
+        TaskManager.createNewTask("Task1", taskDescription: "Task1", dueDate: NSDate(),groupName: "A")
+        TaskManager.createNewTask("Task2", taskDescription: "Task2", dueDate: NSDate(),groupName: "B")
+        TaskManager.createNewTask("Task3", taskDescription: "Task3", dueDate: NSDate(),groupName: "C")
+        TaskManager.createNewTask("Task4", taskDescription: "Task4", dueDate: NSDate(),groupName: "A")
+        TaskManager.createNewTask("Task5", taskDescription: "Task5", dueDate: NSDate(),groupName: "A")
 
     }
     
-    static func createNewTask(taskName : String, taskDescription : String, dueDate : NSDate){
-        let newTask = Task(taskName: taskName,taskDescription: taskDescription, dueDate: dueDate, groupName: "Group 1")
+    
+    static func createNewTask(taskName : String, taskDescription : String, dueDate : NSDate, groupName : String){
+ 
+        let newTask = Task(taskName: taskName,taskDescription: taskDescription, dueDate: dueDate, groupName: groupName)
         tasks.append(newTask)
-        print(newTask.taskName)
-        print(tasks)
     }
     
     

@@ -16,6 +16,7 @@ class Task : NSObject {
     var dateCompleted:NSDate?
     var groupName:String
  
+    
     init(taskName:String,taskDescription:String,dueDate:NSDate,groupName:String) {
         self.taskName = taskName
         self.taskDescription = taskDescription

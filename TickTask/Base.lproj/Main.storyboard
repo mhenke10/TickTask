@@ -507,11 +507,19 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KPX-Bh-XhQ">
+                                <rect key="frame" x="236" y="427" width="128" height="30"/>
+                                <state key="normal" title="Mission Complete"/>
+                                <connections>
+                                    <action selector="completeTask:" destination="oan-Du-yVB" eventType="touchUpInside" id="wKq-bq-a9i"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="WKm-Ar-w7D" firstAttribute="centerX" secondItem="uOb-T1-xcc" secondAttribute="centerX" id="4Sm-qz-PhB"/>
                             <constraint firstItem="c8z-E2-tD8" firstAttribute="centerX" secondItem="uOb-T1-xcc" secondAttribute="centerX" id="NKU-jK-DtE"/>
+                            <constraint firstItem="KPX-Bh-XhQ" firstAttribute="centerX" secondItem="uOb-T1-xcc" secondAttribute="centerX" id="jjX-JO-WRd"/>
                             <constraint firstItem="9KT-Wk-ogz" firstAttribute="centerX" secondItem="uOb-T1-xcc" secondAttribute="centerX" id="oaS-x7-Nse"/>
                         </constraints>
                     </view>

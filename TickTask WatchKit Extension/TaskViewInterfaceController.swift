@@ -16,7 +16,7 @@ class TaskViewInterfaceController: WKInterfaceController {
     @IBOutlet var descLabel: WKInterfaceLabel!
     @IBOutlet var dateLabel: WKInterfaceLabel!
     @IBOutlet var groupLabel: WKInterfaceLabel!
-    
+
     var task : Task?
     
     override func awakeWithContext(context: AnyObject?) {
@@ -29,7 +29,7 @@ class TaskViewInterfaceController: WKInterfaceController {
         let date = dateFormatter.stringFromDate((task!.dateDue))
         dateLabel.setText(date)
         groupLabel.setText(task!.groupName)
-
+        
         // Configure interface objects here.
     }
 
@@ -43,6 +43,22 @@ class TaskViewInterfaceController: WKInterfaceController {
     override func didDeactivate() {
         // This method is called when watch view controller is no longer visible
         super.didDeactivate()
+    }
+    
+    @IBAction func completeTaskButton() {
+        if(self.task!.isCompleted != true){
+            self.task!.completeTask()
+            showPopup()
+        }
+    }
+    
+    func showPopup(){
+        
+        let action2 = WKAlertAction(title: "OK", style: .Destructive) {}
+        
+        presentAlertControllerWithTitle("Mission Complete", message: "Nice work cadet!", preferredStyle: .ActionSheet, actions: [action2])
+        
+        
     }
 
 }
