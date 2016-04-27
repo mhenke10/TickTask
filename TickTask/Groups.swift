@@ -17,7 +17,7 @@ class Groups: NSObject {
         return groups.count
     }
     
-    static func createNewTask(groupName:String){
+    static func createNewGroup(groupName:String){
         let newGroup = App_Group(groupName: groupName)
         groups.append(newGroup)
     }

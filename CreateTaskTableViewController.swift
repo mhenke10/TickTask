@@ -10,7 +10,7 @@ import UIKit
 
 class CreateTaskTableViewController: UITableViewController {
 
-    var task: Int?
+    //var task: Int?
     var currentDate = NSDate()
     var datePickerHidden = false
     @IBOutlet weak var taskNameField: UITextField!

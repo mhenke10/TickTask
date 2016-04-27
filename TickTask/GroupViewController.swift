@@ -8,7 +8,7 @@
 
 import UIKit
 
-class GroupViewController: UIViewController{
+class GroupViewController: UITableViewController{
 
     @IBOutlet weak var nameLabel: UILabel!
     
@@ -16,6 +16,10 @@ class GroupViewController: UIViewController{
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = "Create Group"
         nameLabel.text = group?.groupName
     }
+    
+    
+    
 }

@@ -24,6 +24,8 @@
 		86FF02501C5D5F2B00B565FF /* TaskManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86FF024F1C5D5F2B00B565FF /* TaskManager.swift */; };
 		C4308F801CD0707B00D0B0AE /* CurrentLocation.png in Resources */ = {isa = PBXBuildFile; fileRef = C4308F7F1CD0707B00D0B0AE /* CurrentLocation.png */; };
 		C4308F821CD0708300D0B0AE /* AddPin.png in Resources */ = {isa = PBXBuildFile; fileRef = C4308F811CD0708300D0B0AE /* AddPin.png */; };
+		C43AE4981CD176FF00778B24 /* CreateGroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C43AE4971CD176FF00778B24 /* CreateGroupViewController.swift */; };
+		C43AE49A1CD17E4900778B24 /* TestLocations.gpx in Resources */ = {isa = PBXBuildFile; fileRef = C43AE4991CD17E4900778B24 /* TestLocations.gpx */; };
 		C45262141C5ABE2B00B21DE2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45262131C5ABE2B00B21DE2 /* AppDelegate.swift */; };
 		C45262191C5ABE2B00B21DE2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C45262171C5ABE2B00B21DE2 /* Main.storyboard */; };
 		C452621B1C5ABE2B00B21DE2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C452621A1C5ABE2B00B21DE2 /* Assets.xcassets */; };
@@ -116,6 +118,8 @@
 		86FF024F1C5D5F2B00B565FF /* TaskManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskManager.swift; sourceTree = "<group>"; };
 		C4308F7F1CD0707B00D0B0AE /* CurrentLocation.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = CurrentLocation.png; path = ../../../CurrentLocation.png; sourceTree = "<group>"; };
 		C4308F811CD0708300D0B0AE /* AddPin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = AddPin.png; path = ../../../AddPin.png; sourceTree = "<group>"; };
+		C43AE4971CD176FF00778B24 /* CreateGroupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateGroupViewController.swift; sourceTree = "<group>"; };
+		C43AE4991CD17E4900778B24 /* TestLocations.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = TestLocations.gpx; path = "../../../Downloads/Geotify-Final/Geotify/TestLocations.gpx"; sourceTree = "<group>"; };
 		C45262101C5ABE2B00B21DE2 /* TickTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TickTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C45262131C5ABE2B00B21DE2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C45262181C5ABE2B00B21DE2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -180,6 +184,7 @@
 		86D6DB451CCD7198007AF04D /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				C43AE4971CD176FF00778B24 /* CreateGroupViewController.swift */,
 				C4F619021C60069300F14537 /* CreateTaskTableViewController.swift */,
 				C46841FC1C5D5A2900E381FD /* TaskListViewController.swift */,
 				C4EFF4081CC8B34C001AE8A4 /* TaskLocationViewController.swift */,
@@ -218,6 +223,7 @@
 		C45262071C5ABE2B00B21DE2 = {
 			isa = PBXGroup;
 			children = (
+				C43AE4991CD17E4900778B24 /* TestLocations.gpx */,
 				C45262121C5ABE2B00B21DE2 /* TickTask */,
 				C45262271C5ABE2C00B21DE2 /* TickTaskTests */,
 				C45262321C5ABE2C00B21DE2 /* TickTaskUITests */,
@@ -456,6 +462,7 @@
 				C452621B1C5ABE2B00B21DE2 /* Assets.xcassets in Resources */,
 				C4308F801CD0707B00D0B0AE /* CurrentLocation.png in Resources */,
 				C45262191C5ABE2B00B21DE2 /* Main.storyboard in Resources */,
+				C43AE49A1CD17E4900778B24 /* TestLocations.gpx in Resources */,
 				C4308F821CD0708300D0B0AE /* AddPin.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -504,6 +511,7 @@
 				86CD92961CAC45F800930E7C /* GroupTasksTableViewController.swift in Sources */,
 				86D6DB3E1CCD60E4007AF04D /* App_Group.swift in Sources */,
 				8695FB991CB9937A00222441 /* GroupTaskCell.swift in Sources */,
+				C43AE4981CD176FF00778B24 /* CreateGroupViewController.swift in Sources */,
 				86D6DB441CCD6E65007AF04D /* GroupViewController.swift in Sources */,
 				C46841FD1C5D5A2900E381FD /* TaskListViewController.swift in Sources */,
 				86D6DB421CCD63AA007AF04D /* GroupCell.swift in Sources */,

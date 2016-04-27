@@ -16,6 +16,8 @@ protocol TaskLocationViewControllerDelegate {
 
 class TaskLocationViewController: UITableViewController {
     
+    var task: Task?
+    
     @IBOutlet weak var addButton: UIBarButtonItem!
     @IBOutlet weak var zoomButton: UIBarButtonItem!
     
@@ -38,12 +40,10 @@ class TaskLocationViewController: UITableViewController {
         let eventType = (eventTypeSegmentedControl.selectedSegmentIndex == 0) ? EventType.OnEntry : EventType.OnExit
         delegate!.addTaskLocationViewController(self, didAddCoordinate: coordinate, radius: radius, eventType: eventType, identifier: identifier)
         
+        
     }
     
     
-    @IBAction func onZoom(sender: AnyObject) {
-        //
-    }
     
     
     
