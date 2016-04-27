@@ -17,7 +17,15 @@ class TaskLocationViewController: UITableViewController, MKMapViewDelegate, CLLo
     
     let locationManager = CLLocationManager()
     
+    @IBOutlet weak var addButton: UIBarButtonItem!
+    @IBOutlet weak var zoomButton: UIBarButtonItem!
+    
+    @IBOutlet weak var eventTypeSegmentedControl: UISegmentedControl!
+    @IBOutlet weak var radiusTextField: UITextField!
+    
     @IBOutlet weak var mapView: MKMapView!
+    
+    
     
     override func viewDidLoad() {
         self.title = "Add Location"
