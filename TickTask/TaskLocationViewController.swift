@@ -10,12 +10,11 @@ import UIKit
 import MapKit
 import CoreLocation
 
+protocol TaskLocationViewControllerDelegate {
+    func addTaskLocationViewController(controller: TaskLocationViewController, didAddCoordinate coorindate: CLLocationCoordinate2D, radius: CLLocationDistance, eventType: EventType, identifier: String)
+}
 
-let kSavedTasksKey = "savedTasks"
-
-class TaskLocationViewController: UITableViewController, MKMapViewDelegate, CLLocationManagerDelegate {
-    
-    let locationManager = CLLocationManager()
+class TaskLocationViewController: UITableViewController {
     
     @IBOutlet weak var addButton: UIBarButtonItem!
     @IBOutlet weak var zoomButton: UIBarButtonItem!
@@ -25,14 +24,25 @@ class TaskLocationViewController: UITableViewController, MKMapViewDelegate, CLLo
     
     @IBOutlet weak var mapView: MKMapView!
     
-    
+    var delegate: TaskLocationViewControllerDelegate!
     
     override func viewDidLoad() {
+        super.viewDidLoad()
         self.title = "Add Location"
-        // 1
-        locationManager.delegate = self
-        // 2
-        locationManager.requestAlwaysAuthorization()
+    }
+    
+    @IBAction func onAdd(sender: AnyObject) {
+        let coordinate = mapView.centerCoordinate
+        let radius = (radiusTextField.text! as NSString).doubleValue
+        let identifier = NSUUID().UUIDString
+        let eventType = (eventTypeSegmentedControl.selectedSegmentIndex == 0) ? EventType.OnEntry : EventType.OnExit
+        delegate!.addTaskLocationViewController(self, didAddCoordinate: coordinate, radius: radius, eventType: eventType, identifier: identifier)
+        
+    }
+    
+    
+    @IBAction func onZoom(sender: AnyObject) {
+        //
     }
     
     

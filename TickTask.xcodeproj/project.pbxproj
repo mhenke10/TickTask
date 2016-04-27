@@ -39,6 +39,7 @@
 		C45262551C5ABE2C00B21DE2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C45262541C5ABE2C00B21DE2 /* Assets.xcassets */; };
 		C46816C11C790A4C00FE37F0 /* TaskCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46816C01C790A4C00FE37F0 /* TaskCell.swift */; };
 		C46841FD1C5D5A2900E381FD /* TaskListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46841FC1C5D5A2900E381FD /* TaskListViewController.swift */; };
+		C4AC864A1CD07A2100D2BC70 /* TaskLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4AC86491CD07A2100D2BC70 /* TaskLocation.swift */; };
 		C4EFF4091CC8B34C001AE8A4 /* TaskLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4EFF4081CC8B34C001AE8A4 /* TaskLocationViewController.swift */; };
 		C4F619031C60069300F14537 /* CreateTaskTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F619021C60069300F14537 /* CreateTaskTableViewController.swift */; };
 /* End PBXBuildFile section */
@@ -139,6 +140,7 @@
 		C45262561C5ABE2C00B21DE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C46816C01C790A4C00FE37F0 /* TaskCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskCell.swift; sourceTree = "<group>"; };
 		C46841FC1C5D5A2900E381FD /* TaskListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TaskListViewController.swift; path = ../TaskListViewController.swift; sourceTree = "<group>"; };
+		C4AC86491CD07A2100D2BC70 /* TaskLocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskLocation.swift; sourceTree = "<group>"; };
 		C4EFF4081CC8B34C001AE8A4 /* TaskLocationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskLocationViewController.swift; sourceTree = "<group>"; };
 		C4F619021C60069300F14537 /* CreateTaskTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CreateTaskTableViewController.swift; path = ../CreateTaskTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -197,6 +199,7 @@
 				8695FB981CB9937A00222441 /* GroupTaskCell.swift */,
 				86D6DB3F1CCD61D1007AF04D /* Groups.swift */,
 				86FF024D1C5D4E3A00B565FF /* Task.swift */,
+				C4AC86491CD07A2100D2BC70 /* TaskLocation.swift */,
 				C46816C01C790A4C00FE37F0 /* TaskCell.swift */,
 				86FF024F1C5D5F2B00B565FF /* TaskManager.swift */,
 			);
@@ -504,6 +507,7 @@
 				86D6DB441CCD6E65007AF04D /* GroupViewController.swift in Sources */,
 				C46841FD1C5D5A2900E381FD /* TaskListViewController.swift in Sources */,
 				86D6DB421CCD63AA007AF04D /* GroupCell.swift in Sources */,
+				C4AC864A1CD07A2100D2BC70 /* TaskLocation.swift in Sources */,
 				86FF02501C5D5F2B00B565FF /* TaskManager.swift in Sources */,
 				C4EFF4091CC8B34C001AE8A4 /* TaskLocationViewController.swift in Sources */,
 				86D650631CAC711700E043E2 /* TaskViewController.swift in Sources */,
