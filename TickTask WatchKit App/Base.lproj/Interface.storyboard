@@ -21,6 +21,9 @@
                                                 <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
                                             </label>
                                         </items>
+                                        <connections>
+                                            <segue destination="mEH-ta-TRS" kind="push" identifier="viewTask" id="x3X-7x-Olb"/>
+                                        </connections>
                                     </group>
                                     <connections>
                                         <outlet property="groupLabel" destination="mb4-pf-aTa" id="01Q-gs-qg3"/>
@@ -37,6 +40,26 @@
                 </controller>
             </objects>
             <point key="canvasLocation" x="259" y="345"/>
+        </scene>
+        <!--Task View Interface Controller-->
+        <scene sceneID="8RO-w4-LAm">
+            <objects>
+                <controller id="mEH-ta-TRS" customClass="TaskViewInterfaceController" customModule="TickTask_WatchKit_Extension">
+                    <items>
+                        <label alignment="center" text="Name" textAlignment="center" baselineAdjustment="alignCenters" id="a3s-JS-Bxa"/>
+                        <label alignment="center" text="Desc" numberOfLines="0" id="VjW-hQ-Ce1"/>
+                        <label alignment="center" text="Due Date" id="c5H-Uv-iXL"/>
+                        <label alignment="center" text="Group" id="IXe-i4-3hD"/>
+                    </items>
+                    <connections>
+                        <outlet property="dateLabel" destination="c5H-Uv-iXL" id="kDJ-np-DVP"/>
+                        <outlet property="descLabel" destination="VjW-hQ-Ce1" id="Jbd-5P-8L5"/>
+                        <outlet property="groupLabel" destination="IXe-i4-3hD" id="BHe-C3-obM"/>
+                        <outlet property="nameLabel" destination="a3s-JS-Bxa" id="Vxw-DX-dX5"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="525" y="345"/>
         </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="AEw-b0-oYE">
